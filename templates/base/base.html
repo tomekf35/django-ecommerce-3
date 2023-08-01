@@ -1,4 +1,5 @@
 {% load static %}
+{% load bootstrap5 %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,6 +19,9 @@
     {% block content %}
 
     {% endblock %}
+
+    {% include 'base/footer.html' %}
+
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </body>
 
