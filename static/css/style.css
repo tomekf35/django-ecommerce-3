@@ -7,7 +7,3 @@ body {
 .custom-placeholder::placeholder {
     color: silver;
   }
-
-.custom-header {
-    background-color: black;
-}

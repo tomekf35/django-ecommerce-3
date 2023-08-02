@@ -14,15 +14,10 @@
 </head>
 
 <body class="text-bg-dark text-light">
-    <header>
-        {% include 'base/navbar.html' %}
-    </header>
+    {% include 'base/navbar.html' %}
     {% block content %}
-
     {% endblock %}
-
     {% include 'base/footer.html' %}
-
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </body>
 
