@@ -1,4 +1,5 @@
 {% load static %}
+{% load bootstrap_icons %}
 
 <div class="container">
 
@@ -9,43 +10,37 @@
             </a>
             <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, odio.</p>
             <div>
+                <ul class="nav d-flex col-lg-auto me-lg-auto mb-2 justify-content-center gap-3 ps-0 ms-0">
+                    <li>
+                        <a href="#" class="social-link">
+                            {% bs_icon 'facebook' size='1.5em' color='silver'%}
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="#" class="social-link">
+                            {% bs_icon 'twitter' size='1.5em' color='silver'%}
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#" class="social-link">
-                        <img class="sm-icon" src="{% static 'icons/facebook.svg' %}" alt="Facebook Icon">
-                    </a>
-                </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            {% bs_icon 'instagram' size='1.5em' color='silver'%}
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-twitter" role="img" class="md hydrated"
-                            aria-label="logo twitter"></ion-icon>
-                    </a>
-                </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            {% bs_icon 'youtube' size='1.5em' color='silver'%}
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-instagram" role="img" class="md hydrated"
-                            aria-label="logo instagram"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-youtube" role="img" class="md hydrated"
-                            aria-label="logo youtube"></ion-icon>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#" class="social-link">
-                        <ion-icon name="logo-pinterest" role="img" class="md hydrated"
-                            aria-label="logo pinterest"></ion-icon>
-                    </a>
-                </li>
-
-
+                    <li>
+                        <a href="#" class="social-link">
+                            {% bs_icon 'pinterest' size='1.5em' color='silver'%}
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 
