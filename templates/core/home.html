@@ -9,19 +9,17 @@ Bookstore
 
 <!-- SECTION HERO -->
 
-<section id="hero">
-    <div class="container vh-100 d-flex">
-        <div class="row flex-lg-row-reverse align-items-center mt-0 p-0">
+<section id="hero" style="background-color: black;">
+    <div class="container d-flex pt-5 pb-5">
+        <div class="row flex-lg-row-reverse align-items-center">
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="{% static 'media/base/bootstrap-themes.png' %}" class="d-block mx-lg-auto img-fluid"
                     alt="Bootstrap Themes" loading="lazy" width="700" height="500">
             </div>
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-light lh-1 mb-4">Responsive left-aligned hero with image</h1>
-                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
-                    most
-                    popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
-                    extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <h1 class="display-5 fw-bold text-light lh-1 mb-4">Welcome to BookStore!</h1>
+                <p class="lead">Unlock the Enchantment of Reading - Where Dreams Take Flight, Ideas Flourish, and Hearts
+                    Find Solace in the Pages of Timeless Tales</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
                     <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
@@ -34,44 +32,43 @@ Bookstore
 <!-- SECTION FEATURES -->
 
 <section id="features" class="pb-5">
-    <div class="container marketing border-bottom border-top pt-5 pb-5">
+    <div class="container marketing border-bottom border-secondary pt-5 pb-5">
         <div class="row">
             <div class="col-lg-4">
                 <div>
                     <img class="feature-img" src="{% static 'media/base/feature-1.png' %}" alt="">
                 </div>
                 <h2 class="fw-normal">Free Shipping</h2>
-                <p>Some representative placeholder content for the three columns of text below
-                    the carousel. This is the
-                    first column.</p>
-            </div><!-- /.col-lg-4 -->
+                <p>Enjoy free shipping! Explore our collection and let your imagination soar with Bookstore.</p>
+            </div>
             <div class="col-lg-4">
                 <div>
                     <img class="feature-img" src="{% static 'media/base/feature-2.png' %}" alt="">
                 </div>
                 <h2 class="fw-normal">Secure Payment</h2>
-                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
-                    column.</p>
-            </div><!-- /.col-lg-4 -->
+                <p>Experience secure payment methods! Shop with confidence as we prioritize the safety of your
+                    transactions.</p>
+            </div>
             <div class="col-lg-4">
                 <div>
                     <img class="feature-img" src="{% static 'media/base/feature-3.png' %}" alt="">
                 </div>
                 <h2 class="fw-normal">Easy Returns</h2>
-                <p>And lastly this, the third column of representative placeholder content.</p>
-            </div><!-- /.col-lg-4 -->
+                <p>Enjoy hassle-free returns! Not completely satisfied with your purchase? No worries! We've made the
+                    return process easy and convenient.</p>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- SECTION LATEST OFFERS -->
 
-<section id="offers">
+<section id="offers" class="mb-5 pb-5">
     <div class="container">
         <div class="text-center container">
             <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Latest Offers</h1>
+                    <h1 class="fw-light text-light">Latest Offers</h1>
                     <p class="lead text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, non.
                     </p>
                 </div>
@@ -80,36 +77,58 @@ Bookstore
 
         <div class="text-center container">
             <div class="row gap-5">
+
+                <!-- CARD 1 -->
                 <div class="col">
-                    <div class="book">
-                        <img class="book-cover" src="{% static 'media/books/book-1.png' %}" alt="">
-                        <div class="text-center border-top pt-2">
-                            <h4>Title</h4>
-                            <p>Author</p>
-                            <p>Price</p>
-                        </div>
+                    <div class="card bg-dark">
+                        <a href="" class="nav-link">
+                            <div class="card-body shadow-lg rounded">
+                                <img style="margin-top: -40px;" class=" book-cover"
+                                    src="{% static 'media/books/book-1.png' %}" alt="">
+                                <div class="text-center border-top border-secondary pt-3" style="margin-top: -30px;">
+                                    <h4 class="text-light ">Title</h4>
+                                    <p class="text-light">Author</p>
+                                    <p class="text-light">Price</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
+
+                <!-- CARD 2  -->
                 <div class="col">
-                    <div class="book">
-                        <img class="book-cover" src="{% static 'media/books/book-2.png' %}" alt="">
-                        <div class="text-center border-top pt-2">
-                            <h4>Title</h4>
-                            <p>Author</p>
-                            <p>Price</p>
-                        </div>
+                    <div class="card bg-dark">
+                        <a href="" class="nav-link">
+                            <div class="card-body shadow-lg rounded">
+                                <img style="margin-top: -40px;" class=" book-cover"
+                                    src="{% static 'media/books/book-2.png' %}" alt="">
+                                <div class="text-center border-top border-secondary pt-3" style="margin-top: -30px;">
+                                    <h4 class="text-light ">Title</h4>
+                                    <p class="text-light">Author</p>
+                                    <p class="text-light">Price</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
+
+                <!-- CARD 3 -->
                 <div class="col">
-                    <div class="book">
-                        <img class="book-cover" src="{% static 'media/books/book-3.png' %}" alt="">
-                        <div class="text-center border-top pt-2">
-                            <h4>Title</h4>
-                            <p>Author</p>
-                            <p>Price</p>
-                        </div>
+                    <div class="card bg-dark">
+                        <a href="" class="nav-link">
+                            <div class="card-body shadow-lg rounded">
+                                <img style="margin-top: -40px;" class=" book-cover"
+                                    src="{% static 'media/books/book-3.png' %}" alt="">
+                                <div class="text-center border-top border-secondary pt-3" style="margin-top: -30px;">
+                                    <h4 class="text-light ">Title</h4>
+                                    <p class="text-light">Author</p>
+                                    <p class="text-light">Price</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -119,10 +138,10 @@ Bookstore
 
 <section id="offers">
     <div class="container vh-100 border-bottom mt-5">
-        <div class="text-center container">
+        <div class="text-center container mb-4">
             <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Bestsellers</h1>
+                    <h1 class="fw-light text-light">Bestsellers</h1>
                     <p class="lead text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, non.
                     </p>
                 </div>
@@ -131,34 +150,55 @@ Bookstore
 
         <div class="text-center container">
             <div class="row gap-5">
+
+                <!-- CARD 4 -->
                 <div class="col">
-                    <div class="book">
-                        <img class="book-cover" src="{% static 'media/books/book-1.png' %}" alt="">
-                        <div class="text-center border-top pt-2">
-                            <h4>Title</h4>
-                            <p>Author</p>
-                            <p>Price</p>
-                        </div>
+                    <div class="card bg-dark">
+                        <a href="" class="nav-link">
+                            <div class="card-body shadow-lg rounded">
+                                <img style="margin-top: -40px;" class=" book-cover"
+                                    src="{% static 'media/books/book-4.png' %}" alt="">
+                                <div class="text-center border-top border-secondary pt-3" style="margin-top: -30px;">
+                                    <h4 class="text-light ">Title</h4>
+                                    <p class="text-light">Author</p>
+                                    <p class="text-light">Price</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
+
+                <!-- CARD 5 -->
                 <div class="col">
-                    <div class="book">
-                        <img class="book-cover" src="{% static 'media/books/book-2.png' %}" alt="">
-                        <div class="text-center border-top pt-2">
-                            <h4>Title</h4>
-                            <p>Author</p>
-                            <p>Price</p>
-                        </div>
+                    <div class="card bg-dark">
+                        <a href="" class="nav-link">
+                            <div class="card-body shadow-lg rounded">
+                                <img style="margin-top: -40px;" class=" book-cover"
+                                    src="{% static 'media/books/book-5.png' %}" alt="">
+                                <div class="text-center border-top border-secondary pt-3" style="margin-top: -30px;">
+                                    <h4 class="text-light ">Title</h4>
+                                    <p class="text-light">Author</p>
+                                    <p class="text-light">Price</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
+
+                <!-- CARD 6 -->
                 <div class="col">
-                    <div class="book">
-                        <img class="book-cover" src="{% static 'media/books/book-3.png' %}" alt="">
-                        <div class="text-center border-top pt-2">
-                            <h4>Title</h4>
-                            <p>Author</p>
-                            <p>Price</p>
-                        </div>
+                    <div class="card bg-dark">
+                        <a href="" class="nav-link">
+                            <div class="card-body shadow-lg rounded">
+                                <img style="margin-top: -40px;" class=" book-cover"
+                                    src="{% static 'media/books/book-6.png' %}" alt="">
+                                <div class="text-center border-top border-secondary pt-3" style="margin-top: -30px;">
+                                    <h4 class="text-light ">Title</h4>
+                                    <p class="text-light">Author</p>
+                                    <p class="text-light">Price</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -167,7 +207,7 @@ Bookstore
 </section>
 
 <section id="blog-latest" class="mb-5">
-    <div class="container vh-100">
+    <div class="container">
         SECTION BLOG LATEST
     </div>
 </section>
