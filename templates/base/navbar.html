@@ -8,11 +8,17 @@
             </a>
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 text-secondary">BookStore</a></li>
+                <li><a href="{% url 'core:homepage' %}"
+                        class="nav-link px-2 {% if section == 'homepage' %}text-secondary{%else%}text-white{% endif %}">BookStore</a>
+                </li>
                 <li><a href="#" class="nav-link px-2 text-white">Shop</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Blog Us</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">About Us</a></li>
-                <li><a href="#" class="nav-link px-2 text-white">Contact</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Blog</a></li>
+                <li><a href="{% url 'core:about' %}"
+                        class="nav-link px-2 {% if section == 'about' %}text-secondary{%else%}text-white{% endif %}">About
+                        Us</a></li>
+                <li><a href="{% url 'core:contact' %}"
+                        class="nav-link px-2 {% if section == 'contact' %}text-secondary{%else%}text-white{% endif %}">Contact</a>
+                </li>
             </ul>
 
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
