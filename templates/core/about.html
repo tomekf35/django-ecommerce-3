@@ -1,9 +1,33 @@
 {% extends 'base/base.html' %}
+{% load static %}
 
 {% block title %}
 Bookstore | About
 {% endblock %}
 
 {% block content %}
-<h1>About</h1>
+<div class="container mt-5 pt-5 mb-5 pb-5">
+    <div class="d-flex align-items-center justify-content-center">
+        <div class="w-50">
+            <h2>About Us</h2>
+            <p>Welcome to BookStore, your literary paradise! We are passionate about books and believe in the
+                transformative power of reading. Our mission is to inspire and nurture a love for literature by
+                providing a curated selection of high-quality books across various genres.</p>
+            <p>At BookStore, we value the joy of reading and the unique experiences each book can offer. We are
+                committed to offering a diverse collection that caters to different interests, ages, and
+                preferences. Our team of book enthusiasts is always on the lookout for hidden gems and
+                bestsellers to enrich your reading journey.</p>
+            <p>Customer satisfaction is our top priority. We strive to provide an exceptional shopping experience
+                with easy navigation, secure payments, and prompt deliveries. Whether you are a lifelong reader or
+                new to the world of books, we welcome you to explore our store and embark on literary adventures
+                with us.</p>
+        </div>
+        <div class="rounded">
+            <img src="{% static 'media/base/bootstrap-themes.png' %}" alt="" style="width: 400px; height: 400px;">
+        </div>
+
+    </div>
+
+
+</div>
 {% endblock %}
