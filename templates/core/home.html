@@ -1,5 +1,6 @@
 {% extends 'base/base.html' %}
 {% load static %}
+{% load bootstrap_icons %}
 
 {% block title %}
 Bookstore
@@ -9,8 +10,8 @@ Bookstore
 
 <!-- SECTION HERO -->
 
-<section id="hero" style="background-color: black;">
-    <div class="container d-flex pt-5 pb-5">
+<section id="hero" class="vh-100" style="background-color: black;">
+    <div class="container d-flex pt-5">
         <div class="row flex-lg-row-reverse align-items-center">
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="{% static 'media/base/bootstrap-themes.png' %}" class="d-block mx-lg-auto img-fluid"
@@ -68,9 +69,10 @@ Bookstore
         <div class="text-center container">
             <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light text-light">Latest Offers</h1>
-                    <p class="lead text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, non.
-                    </p>
+                    <div class="d-flex align-items-center justify-content-center mb-5">
+                        <p class="m-0 p-0" style="color: rgb(211, 179, 0);">{% bs_icon 'star-fill' size='3em' %}</p>
+                        <h1 class="fw-light text-light m-0 p-0 ms-3">Bestsellers</h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,9 +143,11 @@ Bookstore
         <div class="text-center container mb-4">
             <div class="row">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light text-light">Bestsellers</h1>
-                    <p class="lead text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, non.
-                    </p>
+                    <div class="d-flex align-items-center justify-content-center mb-5">
+                        <p class="m-0 p-0" style="color: rgb(211, 179, 0);">{% bs_icon 'calendar3' size='3em' %}
+                        </p>
+                        <h1 class="fw-light text-light m-0 p-0 ms-3">Latest Offers</h1>
+                    </div>
                 </div>
             </div>
         </div>
