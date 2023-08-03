@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,200&family=Poppins:ital,wght@0,300;1,100;1,200&display=swap');
 
 body {
+    padding-top: 0px;
     font-family: 'Poppins', sans-serif;
 }
 
 .custom-placeholder::placeholder {
     color: silver;
   }
+
+.feature-img {
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+.book-cover {
+    height: 300px;
+}

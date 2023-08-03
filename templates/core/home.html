@@ -6,7 +6,10 @@ Bookstore
 {% endblock %}
 
 {% block content %}
-<section id="hero" style="background-color: rgb(20, 0, 40);">
+
+<!-- SECTION HERO -->
+
+<section id="hero">
     <div class="container vh-100 d-flex">
         <div class="row flex-lg-row-reverse align-items-center mt-0 p-0">
             <div class="col-10 col-sm-8 col-lg-6">
@@ -28,21 +31,138 @@ Bookstore
     </div>
 </section>
 
-<section id="features" class="mb-5 ">
-    <div class="container vh-100 border-bottom">
-        SECTION FEATURES
+<!-- SECTION FEATURES -->
+
+<section id="features" class="pb-5">
+    <div class="container marketing border-bottom border-top pt-5 pb-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div>
+                    <img class="feature-img" src="{% static 'media/base/feature-1.png' %}" alt="">
+                </div>
+                <h2 class="fw-normal">Free Shipping</h2>
+                <p>Some representative placeholder content for the three columns of text below
+                    the carousel. This is the
+                    first column.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <div>
+                    <img class="feature-img" src="{% static 'media/base/feature-2.png' %}" alt="">
+                </div>
+                <h2 class="fw-normal">Secure Payment</h2>
+                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
+                    column.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <div>
+                    <img class="feature-img" src="{% static 'media/base/feature-3.png' %}" alt="">
+                </div>
+                <h2 class="fw-normal">Easy Returns</h2>
+                <p>And lastly this, the third column of representative placeholder content.</p>
+            </div><!-- /.col-lg-4 -->
+        </div>
     </div>
 </section>
 
-<section id="offers" class="mb-5">
-    <div class="container vh-100 border-bottom">
-        SECTION BESTSELLERS | SECTION PROMOTIONS | SECTION LATEST
+<!-- SECTION LATEST OFFERS -->
+
+<section id="offers">
+    <div class="container">
+        <div class="text-center container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Latest Offers</h1>
+                    <p class="lead text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, non.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center container">
+            <div class="row gap-5">
+                <div class="col">
+                    <div class="book">
+                        <img class="book-cover" src="{% static 'media/books/book-1.png' %}" alt="">
+                        <div class="text-center border-top pt-2">
+                            <h4>Title</h4>
+                            <p>Author</p>
+                            <p>Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="book">
+                        <img class="book-cover" src="{% static 'media/books/book-2.png' %}" alt="">
+                        <div class="text-center border-top pt-2">
+                            <h4>Title</h4>
+                            <p>Author</p>
+                            <p>Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="book">
+                        <img class="book-cover" src="{% static 'media/books/book-3.png' %}" alt="">
+                        <div class="text-center border-top pt-2">
+                            <h4>Title</h4>
+                            <p>Author</p>
+                            <p>Price</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="testimonials" class="mb-5">
-    <div class="container vh-100 border-bottom">
-        SECTION TESTIMONIALS
+<!-- SECTION BESTSELLERT -->
+
+<section id="offers">
+    <div class="container vh-100 border-bottom mt-5">
+        <div class="text-center container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Bestsellers</h1>
+                    <p class="lead text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, non.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center container">
+            <div class="row gap-5">
+                <div class="col">
+                    <div class="book">
+                        <img class="book-cover" src="{% static 'media/books/book-1.png' %}" alt="">
+                        <div class="text-center border-top pt-2">
+                            <h4>Title</h4>
+                            <p>Author</p>
+                            <p>Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="book">
+                        <img class="book-cover" src="{% static 'media/books/book-2.png' %}" alt="">
+                        <div class="text-center border-top pt-2">
+                            <h4>Title</h4>
+                            <p>Author</p>
+                            <p>Price</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="book">
+                        <img class="book-cover" src="{% static 'media/books/book-3.png' %}" alt="">
+                        <div class="text-center border-top pt-2">
+                            <h4>Title</h4>
+                            <p>Author</p>
+                            <p>Price</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
