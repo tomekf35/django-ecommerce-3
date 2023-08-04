@@ -18,3 +18,11 @@ body {
 .book-cover {
     height: 300px;
 }
+
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 300px;
+    width: 100%;
+    border: none;
+  }
