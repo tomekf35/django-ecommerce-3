@@ -68,6 +68,7 @@ Bookstore | Contact
             </div>
             <div>
                 <form action="" method="POST">
+                    {% csrf_token %}
                     <div class="mb-3">
                         <input type="text"
                             class="form-control form-control-dark text-bg-dark custom-placeholder form-control-lg"
