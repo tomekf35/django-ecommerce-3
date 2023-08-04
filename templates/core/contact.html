@@ -7,7 +7,17 @@ Bookstore | Contact
 
 {% block content %}
 
-<div class="container mt-5 pt-5 mb-5 pb-5">
+<div class="container d-flex align-items-center justify-content-center position-relative" style="height: 100px;">
+    <!-- <div id="msg" class=" position-relative w-50 h-50 alert alert-success fade-in text-center d-flex align-items-center
+        justify-content-center" role="alert">
+        <i style="color: rgb(12, 209, 38)"">{% bs_icon 'check-circle-fill' size='1.5em' %}</i>
+        <p class=" mb-0 pb-0 ms-2">Message has been sent!</p>
+            <p class="position-absolute top-50 end-0 translate-middle-y">
+                <button class="btn btn-xs btn-success-outline" onclick="closeAlert()">x</button>
+            </p>
+    </div> -->
+</div>
+<div class=" container mb-5 pb-5">
     <div class="d-flex justify-content-between">
         <div class="col-5">
             <div class="row">
@@ -17,19 +27,24 @@ Bookstore | Contact
                             <h3>Our Location</h3>
                             <ul class="mb-4 list-unstyled">
                                 <li>
-                                    <i style="color: rgb(73, 76, 255)">{% bs_icon 'house-door-fill' size='1em' %}</i>
+                                    <i style="color: rgb(73, 76, 255)">
+                                        {% bs_icon 'house-door-fill' size='1em'%}</i>
                                     123 Bookstore Street
                                 </li>
                                 <li>
-                                    <i style="color: rgb(73, 76, 255)">{% bs_icon 'house-door-fill' size='1em' %}</i>
+                                    <i style="color: rgb(73, 76, 255)">
+                                        {% bs_icon 'house-door-fill' size='1em'%}
+                                    </i>
                                     Bookville
                                 </li>
                                 <li>
-                                    <i style="color: rgb(73, 76, 255)">{% bs_icon 'house-door-fill' size='1em' %}</i>
+                                    <i style="color: rgb(73, 76, 255)">
+                                        {% bs_icon 'house-door-fill' size='1em'%}</i>
                                     Booklandia 56789
                                 </li>
                                 <li>
-                                    <i style="color: rgb(73, 76, 255)">{% bs_icon 'house-door-fill' size='1em' %}</i>
+                                    <i style="color: rgb(73, 76, 255)">
+                                        {% bs_icon 'house-door-fill' size='1em'%}</i>
                                     Fiction World
                                 </li>
                             </ul>
@@ -38,15 +53,18 @@ Bookstore | Contact
                             <h3>Contact Info</h3>
                             <ul class="mb-4 list-unstyled">
                                 <li>
-                                    <i style="color: rgb(73, 76, 255)">{% bs_icon 'telephone-fill' size='1em' %}</i>
+                                    <i style="color: rgb(73, 76, 255)">
+                                        {% bs_icon 'telephone-fill' size='1em'%}</i>
                                     +123-456-7890
                                 </li>
                                 <li>
-                                    <i style="color: rgb(73, 76, 255)">{% bs_icon 'telephone-fill' size='1em' %}</i>
+                                    <i style="color: rgb(73, 76, 255)">
+                                        {% bs_icon 'telephone-fill' size='1em'%}</i>
                                     +987-654-3210
                                 </li>
                                 <li>
-                                    <i style="color: rgb(73, 76, 255)">{% bs_icon 'envelope-fill' size='1em' %}</i>
+                                    <i style="color: rgb(73, 76, 255)">
+                                        {% bs_icon 'envelope-fill' size='1em'%}</i>
                                     info@bookstore.com
                                 </li>
                             </ul>
@@ -93,6 +111,5 @@ Bookstore | Contact
         </div>
     </div>
 </div>
-
 
 {% endblock %}
