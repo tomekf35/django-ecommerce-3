@@ -8,14 +8,18 @@ Bookstore | Contact
 {% block content %}
 
 <div class="container d-flex align-items-center justify-content-center position-relative" style="height: 100px;">
-    <!-- <div id="msg" class=" position-relative w-50 h-50 alert alert-success fade-in text-center d-flex align-items-center
-        justify-content-center" role="alert">
+    {% if messages %}
+    {% for message in messages %}
+    <div id="msg" class=" position-relative w-50 h-50 alert alert-success fade-in text-center d-flex align-items-center
+            justify-content-center" role="alert">
         <i style="color: rgb(12, 209, 38)"">{% bs_icon 'check-circle-fill' size='1.5em' %}</i>
-        <p class=" mb-0 pb-0 ms-2">Message has been sent!</p>
+            <p class=" mb-0 pb-0 ms-2">{{ message|safe }}</p>
             <p class="position-absolute top-50 end-0 translate-middle-y">
-                <button class="btn btn-xs btn-success-outline" onclick="closeAlert()">x</button>
+                <button class="close btn btn-xs btn-success-outline" onclick="closeAlert()">x</button>
             </p>
-    </div> -->
+    </div>
+    {% endfor %}
+    {% endif %}
 </div>
 <div class=" container mb-5 pb-5">
     <div class="d-flex justify-content-between">
