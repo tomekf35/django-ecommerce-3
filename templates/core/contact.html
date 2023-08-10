@@ -10,13 +10,9 @@ Bookstore | Contact
 <div class="container d-flex align-items-center justify-content-center position-relative" style="height: 100px;">
     {% if messages %}
     {% for message in messages %}
-    <div id="msg" class=" position-relative w-50 h-50 alert alert-success fade-in text-center d-flex align-items-center
-            justify-content-center" role="alert">
-        <i style="color: rgb(12, 209, 38)"">{% bs_icon 'check-circle-fill' size='1.5em' %}</i>
-            <p class=" mb-0 pb-0 ms-2">{{ message|safe }}</p>
-            <p class="position-absolute top-50 end-0 translate-middle-y">
-                <button class="close btn btn-xs btn-success-outline" onclick="closeAlert()">x</button>
-            </p>
+    <div class="alert alert-warning alert-dismissible fade show w-100" role="alert">
+        <p class=" mb-0 pb-0 ms-2 text-center">{{ message|safe }}</p>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     {% endfor %}
     {% endif %}
