@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "core.apps.CoreConfig",
     "bootstrap5",
     "django_bootstrap_icons",
+    "accounts.apps.AccountsConfig",
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,5 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+AUTH_USER_MODEL = "accounts.CustomUser"

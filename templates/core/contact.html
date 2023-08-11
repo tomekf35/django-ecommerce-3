@@ -11,7 +11,7 @@ Bookstore | Contact
     {% if messages %}
     {% for message in messages %}
     <div class="alert alert-warning alert-dismissible fade show w-100" role="alert">
-        <p class=" mb-0 pb-0 ms-2 text-center">{{ message|safe }}</p>
+        <p class=" mb-0 pb-0 ms-2 text-center"><strong>{{ message|safe }}</strong></p>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     {% endfor %}
