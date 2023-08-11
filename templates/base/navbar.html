@@ -22,12 +22,48 @@
             </ul>
 
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                <input type="search" class="form-control form-control-dark text-bg-dark custom-placeholder"
-                    placeholder="Search..." aria-label="Search">
+                <div class="d-flex">
+                    <input type="search" class="form-control form-control-dark text-bg-dark custom-placeholder"
+                        placeholder="Search..." aria-label="Search">
+                    <button type="button" class="btn btn-warning btn-sm  ms-1">
+                        {% bs_icon 'search' size='1em' %}
+                    </button>
+                </div>
             </form>
 
-            <div class="text-end">
+            <div class="text-end ms-5">
+                {% if user.is_authenticated %}
+                <div class="nav d-flex">
+                    <div class="d-flex align-items-center justify-content-center me-3">
+                        <a href="#" class="d-block link-light text-decoration-none">
+                            {% bs_icon 'cart' size='2em' %}
+                        </a>
+                    </div>
+                    <div class="dropdown text-end">
+                        <a href="#" class="d-block link-light text-decoration-none" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            {% bs_icon 'person-circle' size='2em' %}
+                        </a>
+                        <ul class="dropdown-menu text-small bg-dark">
+                            <li>
+                                <p class="dropdown-item text-white">{{ user.username }}</p>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider bg-secondary">
+                            </li>
+                            <li><a class="dropdown-item text-white" href="#">Profile</a></li>
+                            <li><a class="dropdown-item text-white" href="#">My Library</a></li>
+                            <li>
+                                <hr class="dropdown-divider bg-secondary">
+                            </li>
+                            <li><a href="#" class="dropdown-item text-white">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                {% else %}
                 <button type="button" class="btn btn-warning">Sign-in</button>
+                {% endif %}
             </div>
         </div>
     </div>
