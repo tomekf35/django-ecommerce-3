@@ -37,11 +37,26 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
+    # local
     "core.apps.CoreConfig",
+    "accounts.apps.AccountsConfig",
+    # bootstrap
     "bootstrap5",
     "django_bootstrap_icons",
-    "accounts.apps.AccountsConfig",
+    # allauth
+    "allauth",
+    "allauth.account",
 ]
+
+LOGIN_REDIRECT_URL = "core:homepage"
+LOGOUT_REDIRECT_URL = "core:homepage"
+SITE_ID = 1
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend",
+]
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
