@@ -56,13 +56,13 @@
                             <li>
                                 <hr class="dropdown-divider bg-secondary">
                             </li>
-                            <li><a href="#" class="dropdown-item text-white">Logout</a>
+                            <li><a href="{% url 'account_logout' %}" class="dropdown-item text-white">Logout</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 {% else %}
-                <button type="button" class="btn btn-warning">Sign-in</button>
+                <a href="{% url 'account_login' %}" class="btn btn-warning">Sign-in</a>
                 {% endif %}
             </div>
         </div>
