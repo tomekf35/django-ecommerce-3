@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+
+{% block title %}
+BookStore | Account COnfirmation
+{% endblock %}
+
+{% block content %}
+<main class="form-signin vh-100 m-auto mt-4 justify-content-center">
+    <div class="form-group shadow-lg rounded p-3 mt-5">
+        <form method="POST">
+            {% csrf_token %}
+            <hr>
+            <p class="mb-3 fw-normal text-center">
+                Thank you for signing up for our website!
+            </p>
+            <p class="mb-3 fw-normal text-center">
+                Please click on the link below to confirm your email address:
+            </p>
+            <a class="btn btn-primary w-100" href="{{ activate_url }}">{{ activate_url }}</a>
+            <hr>
+        </form>
+    </div>
+</main>
+{% include 'base/footer.html' %}
+{% endblock %}
