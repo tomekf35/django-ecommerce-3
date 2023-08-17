@@ -7,19 +7,19 @@ BookStore | Login
 {% block content %}
 <main class="form-signin vh-100 m-auto mt-4 justify-content-center">
     <div class="form-group mt-5">
-        <!-- <form method="POST">
+        <form method="POST">
             {% csrf_token %}
 
             <h1 class="h3 mb-3 fw-normal">Please Login</h1>
 
             <div class="mb-3">
-                <input type="text" name="Username"
+                <input type="email" name="Email"
                     class="form-control form-control-dark text-bg-dark custom-placeholder form-control-lg" name="name"
-                    placeholder="username">
+                    placeholder="email">
             </div>
 
             <div class="mb-3">
-                <input type="password" name="Password1"
+                <input type="password" name="Password"
                     class="form-control form-control-dark text-bg-dark custom-placeholder form-control-lg" name="name"
                     placeholder="password">
             </div>
@@ -29,8 +29,8 @@ BookStore | Login
                     id="flexCheckDefault">
                 <div>
                     <label class="form-check-label text-light" for="flexCheckDefault">Remember me</label>
-                    <a href="#" class="float-end"><small class="text-light">Forgot
-                            password</small></a>
+                    <a href="#" class="float-end"><small class="text-light">
+                            Forgot password</small></a>
                 </div>
             </div>
 
@@ -41,12 +41,12 @@ BookStore | Login
                 </small>
             </p>
             <hr>
-        </form> -->
-        <form action="" method="post">
+        </form>
+        <!-- <form action="" method="post">
             {% csrf_token %}
             {{ form.as_p }}
             <button class="btn btn-primary w-100 py-2" type="submit">Submit</button>
-        </form>
+        </form> -->
     </div>
 </main>
 {% include 'base/footer.html' %}
