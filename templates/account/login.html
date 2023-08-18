@@ -7,13 +7,13 @@ BookStore | Login
 {% block content %}
 <main class="form-signin vh-100 m-auto mt-4 justify-content-center">
     <div class="form-group shadow-lg rounded mt-5">
-        <!-- <form method="POST" action="{% url 'account_login' %}">
+        <form method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}
 
             <h1 class="h3 mb-3 fw-normal">Please Login</h1>
 
             <div class="mb-3">
-                <input type="email" name="email"
+                <input type="email" name="login"
                     class="form-control form-control-dark text-bg-dark custom-placeholder form-control-lg"
                     placeholder="email">
             </div>
@@ -37,22 +37,11 @@ BookStore | Login
             <button class="btn btn-primary w-100 py-2" type="submit">Submit</button>
             <p class="mt-3 text-center">
                 <small class="text-light">Don't have account?
-                    <a href="#" class="text-light">Register here</a>
-                </small>
-            </p>
-            <hr>
-        </form> -->
-        <form action="" method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button class="btn btn-primary w-100 py-2" type="submit">Submit</button>
-            <p class="mt-3 text-center">
-                <small class="text-light">Don't have account?
                     <a href="{% url 'account_signup' %}" class="text-light">Register here</a>
                 </small>
             </p>
+            <hr>
         </form>
     </div>
 </main>
-{% include 'base/footer.html' %}
 {% endblock %}
