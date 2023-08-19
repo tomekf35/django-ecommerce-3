@@ -49,19 +49,20 @@ INSTALLED_APPS = [
     "allauth.account",
 ]
 
-LOGIN_REDIRECT_URL = "core:homepage"
-LOGOUT_REDIRECT_URL = "core:homepage"
+# Allauth settings
 SITE_ID = 1
 AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
     "allauth.account.auth_backends.AuthenticationBackend",
 ]
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = "email"
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
 ACCOUNT_SIGNUP_REDIRECT_URL = "/accounts/verification_sent.html"
+LOGIN_REDIRECT_URL = "core:homepage"
+LOGOUT_REDIRECT_URL = "core:homepage"
+ACCOUNT_AUTHENTICATION_METHOD = "email"
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
 
 
 MIDDLEWARE = [
