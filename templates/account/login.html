@@ -5,7 +5,7 @@ BookStore | Login
 {% endblock %}
 
 {% block content %}
-<main class="form-signin vh-100 m-auto mt-4 justify-content-center">
+<main class="form-signin vh-100 m-auto justify-content-center">
     <div class="form-group shadow-lg rounded mt-5 p-1">
         <form method="POST" action="{% url 'account_login' %}">
             {% csrf_token %}
@@ -29,7 +29,7 @@ BookStore | Login
                     id="flexCheckDefault">
                 <div>
                     <label class="form-check-label text-light" for="flexCheckDefault">Remember me</label>
-                    <a href="{% url 'account_reset_password' %}" class="float-end"><small class="text-light">
+                    <a href="{% url 'account_reset_password' %}" class="float-end text-light"><small class="text-light">
                             Forgot password</small></a>
                 </div>
             </div>
@@ -44,8 +44,9 @@ BookStore | Login
 
                 </div>
                 <div class="mt-2 d-flex">
-                    <a href="#" class="w-50 me-1 btn text-light" style="background-color: #4267b2;">facebook</a>
-                    <a href="#" class="w-50 ms-1 btn text-light" style="background-color: #DB4437;">google</a>
+                    <a href="#" class="w-50 ms-1 me-1 btn text-light" style="background-color: #4267b2;">facebook</a>
+                    <a href="{% provider_login_url 'google' %}" class="w-50 ms-1 me-1 btn text-light"
+                        style="background-color: #DB4437;">google</a>
                 </div>
             </div>
 
