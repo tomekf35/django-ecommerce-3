@@ -1,10 +1,13 @@
 {% extends 'base/base.html' %}
+{% load socialaccount %}
 
 {% block title %}
 BookStore | Login
 {% endblock %}
 
 {% block content %}
+
+
 <main class="form-signin vh-100 m-auto justify-content-center">
     <div class="form-group shadow-lg rounded mt-5 p-1">
         <form method="POST" action="{% url 'account_login' %}">
@@ -56,8 +59,6 @@ BookStore | Login
                 </small>
             </p>
         </form>
-
-
 
     </div>
 </main>
