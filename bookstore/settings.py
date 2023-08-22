@@ -62,8 +62,8 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
     "allauth.account.auth_backends.AuthenticationBackend",
 ]
+
 ACCOUNT_EMAIL_VERIFICATION = "mandatory"
-ACCOUNT_SIGNUP_REDIRECT_URL = "/accounts/verification_sent.html"
 LOGIN_REDIRECT_URL = "core:homepage"
 LOGOUT_REDIRECT_URL = "core:homepage"
 ACCOUNT_AUTHENTICATION_METHOD = "email"
@@ -72,7 +72,6 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_SESSION_REMEMBER = True
 SESSION_COOKIE_AGE = 10000
-
 
 SOCIALACCOUNT_PROVIDERS = {
     "google": {
