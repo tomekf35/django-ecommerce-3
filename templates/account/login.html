@@ -1,5 +1,6 @@
 {% extends 'base/base.html' %}
 {% load socialaccount %}
+{% load bootstrap_icons %}
 
 {% block title %}
 BookStore | Login
@@ -47,9 +48,13 @@ BookStore | Login
 
                 </div>
                 <div class="mt-2 d-flex">
-                    <a href="#" class="w-50 ms-1 me-1 btn text-light" style="background-color: #4267b2;">facebook</a>
+                    <a href="#" class="w-50 ms-1 me-1 btn text-light" style="background-color: #4267b2;">
+                        {% bs_icon 'facebook' size='0.9em' %} facebook
+                    </a>
                     <a href="{% provider_login_url 'google' %}" class="w-50 ms-1 me-1 btn text-light"
-                        style="background-color: #DB4437;">google</a>
+                        style="background-color: #DB4437;">
+                        {% bs_icon 'google' size='0.9em' %} google
+                    </a>
                 </div>
             </div>
 
