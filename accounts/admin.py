@@ -1,7 +1,4 @@
 from django.contrib import admin
-from .models import CustomUser, Address, PhoneNumber
-
+from .models import CustomUser
 
 admin.site.register(CustomUser)
-admin.site.register(Address)
-admin.site.register(PhoneNumber)

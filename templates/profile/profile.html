@@ -7,6 +7,40 @@ Bookstore | Profile
 
 {% block content %}
 <div class="container h-auto">
-    <h5>User Profile</h5>
+    <div class="d-flex flex-column align-items-center my-5">
+        <h3 class="h3">User Profile</h3>
+
+        <!-- Avatar -->
+        <div class="avatar d-flex flex-column align-items-center">
+            Avatar here
+            <button class="btn btn-primary">Change</button>
+        </div>
+
+        <!-- User Data -->
+        <div class="user-data d-flex flex-column align-items-center my-4 rounded">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-dark">
+                    <span class="text-start">First Name</span>
+                    <span class="text-end">Jan</span>
+                </li>
+                <li class="list-group-item list-group-item-dark">
+                    <span class="text-start">Second Name</span>
+                    <span class="text-end">Kowalski</span>
+                </li>
+
+            </ul>
+
+            <button class="btn btn-primary">Edit</button>
+        </div>
+
+        <!-- PAssword Settings -->
+        <div class="password d-flex flex-column align-items-center">
+            password here
+            <div class="buttons">
+                <button class="btn btn-danger">Change</button>
+                <button class="btn btn-danger">reset</button>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
