@@ -20,13 +20,18 @@ Bookstore | Profile
         <div class="user-data d-flex flex-column align-items-center my-4 rounded">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item list-group-item-dark">
-                    <span class="text-start">First Name</span>
-                    <span class="text-end">Jan</span>
+                    <span class="text-start fw-bolder">Username</span>
+                    <span class="text-end">{{ user.username }}</span>
                 </li>
                 <li class="list-group-item list-group-item-dark">
-                    <span class="text-start">Second Name</span>
-                    <span class="text-end">Kowalski</span>
+                    <span class="text-start fw-bolder">FirstName</span>
+                    <span class="text-end">{{ user.first_name }}</span>
                 </li>
+                <li class="list-group-item list-group-item-dark">
+                    <span class="text-start fw-bolder">Last Name</span>
+                    <span class="text-end">{{ user.last_name }}</span>
+                </li>
+
 
             </ul>
 
