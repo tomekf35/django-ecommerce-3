@@ -6,46 +6,34 @@ Bookstore | Profile
 {% endblock %}
 
 {% block content %}
-<div class="container h-auto">
-    <div class="d-flex flex-column align-items-center my-5">
-        <h3 class="h3">User Profile</h3>
-
-        <!-- Avatar -->
-        <div class="avatar d-flex flex-column align-items-center">
-            Avatar here
-            <button class="btn btn-primary">Change</button>
-        </div>
-
-        <!-- User Data -->
-        <div class="user-data d-flex flex-column align-items-center my-4 rounded">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item list-group-item-dark">
-                    <span class="text-start fw-bolder">Username</span>
-                    <span class="text-end">{{ user.username }}</span>
-                </li>
-                <li class="list-group-item list-group-item-dark">
-                    <span class="text-start fw-bolder">FirstName</span>
-                    <span class="text-end">{{ user.first_name }}</span>
-                </li>
-                <li class="list-group-item list-group-item-dark">
-                    <span class="text-start fw-bolder">Last Name</span>
-                    <span class="text-end">{{ user.last_name }}</span>
-                </li>
-
-
-            </ul>
-
-            <button class="btn btn-primary">Edit</button>
-        </div>
-
-        <!-- PAssword Settings -->
-        <div class="password d-flex flex-column align-items-center">
-            password here
-            <div class="buttons">
-                <button class="btn btn-danger">Change</button>
-                <button class="btn btn-danger">reset</button>
+<div class="container">
+    <div class="user-info vh-100">
+        <h3 class="h3 text-center mt-3">User Info</h3>
+        <div class="row g-4">
+            <div class="col-md-6 border">
+                <h4 class="h4 text-center">Avatar</h4>
+            </div>
+            <div class="col-md-6 border">
+                <h4 class="h4 text-center">{{ user.username }} info</h4>
+                <ul>
+                    <li>
+                        <span>First Name</span>
+                        <span>{{ user.first_name }}</span>
+                    </li>
+                    <li>
+                        <span>Last Name</span>
+                        <span>{{ user.last_name }}</span>
+                    </li>
+                    <li>Email</li>
+                    <li>Birth Date</li>
+                </ul>
             </div>
         </div>
     </div>
+    <hr>
+    <div class="user-info vh-100">
+        <h3 class="h3 text-center">User Address</h3>
+    </div>
+    <hr>
 </div>
 {% endblock %}
